@@ -31,8 +31,9 @@ public class HelloWorldTest {
         // Simple timer
         long startTime = System.nanoTime();
 
-        // resolve a file in the data dir (data/timing.txt)
-        Path timingFile = Paths.get("data/timing.txt");
+        // resolve a file relative to the `target` directory
+        Path timingFile = Paths.get("./target/test-output/timing.txt");
+        Files.createDirectories(timingFile.getParent());
 
         // Record the time
         long timeTaken = System.nanoTime() - startTime;
