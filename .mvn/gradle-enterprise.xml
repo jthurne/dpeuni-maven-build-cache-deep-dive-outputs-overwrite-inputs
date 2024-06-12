@@ -8,6 +8,15 @@
     <capture>
       <goalInputFiles>true</goalInputFiles>
     </capture>
+    <tags>
+      <tag>dpeuni-maven-build-cache-deep-dive-outputs-overwrite-inputs</tag>
+    </tags>
+    <values>
+      <value>
+        <name>Course</name>
+        <value>Maven Build Cache Deep Dive</value>
+      </value>
+    </values>
   </buildScan>
   <buildCache>
     <remote>
